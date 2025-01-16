@@ -1,0 +1,52 @@
+
+body {
+  margin: 0; 
+  padding: 0;
+  color: aliceblue;
+  background-color: #dc9ae7;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1rem, 2vw, 2.5rem);
+
+  min-height: 90vh;
+
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+
+}
+
+.SlotFrame {
+  padding: 1rem;
+
+  background: 
+    linear-gradient(135deg, rgba(94, 12, 108, 0.99), rgba(158, 18, 189, 0.6)),
+    url('DALL·E_2025_2.webp');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  min-height: 50vh;
+  max-width: 100%;
+  border: 1vh white solid;
+}
+
+bottomRow {
+  display: flex;
+  justify-content: space-between;  
+  align-items: stretch; 
+  margin: 20px;
+}

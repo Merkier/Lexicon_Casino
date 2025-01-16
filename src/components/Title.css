@@ -1,0 +1,12 @@
+.welcome{
+    margin-top: 5px;
+}
+
+.casinoTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+  }

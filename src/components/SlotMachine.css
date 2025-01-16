@@ -1,0 +1,158 @@
+/* General container styling */
+.machineContainer {
+  margin: 0 auto;
+  color: #5a6268;
+  max-width: 100%;
+}
+
+/* Slots container */
+.slots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 2vw;
+  margin: 2vh 2vw;
+  background-color: rgb(63, 40, 9);
+  border: 1vh solid #ffd700;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+/* Individual slot */
+.slot {
+  width: clamp(4rem, 10vw, 10rem);
+  height: clamp(7rem, 13vw, 20rem);
+  font-size: clamp(2rem, 5vw, 5rem);
+  border: 1px ridge #ffd700;
+  border-radius: 5%;
+  background-color: rgb(243, 235, 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Spin button */
+.spinbutton {
+  background-color: #e62e00;
+  color: #ffffff;
+  border: 0.5rem solid #ffd700;
+  border-radius: 0.5rem;
+  font-size: clamp(1rem, 2vw, 2.5rem);
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.spinbutton:hover,
+.spinbutton:focus {
+  background-color: #bf2300;
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.15);
+}
+
+.spinbutton:active {
+  transform: scale(0.98);
+}
+
+.spinbutton:disabled {
+  border: 0.5rem solid #888888;
+  background-color: #5a6268;
+}
+
+.spinbutton.secondary {
+  background-color: #6c757d;
+}
+
+/* Responsive font adjustment */
+@media (min-width: 480px) {
+  .spinbutton {
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+  }
+}
+
+/* Shared message styling */
+.result-message,
+.instructions-message {
+  color: #ffffff;
+  min-height: 1.5em;
+  margin: 1rem;
+  background-color: #5a6268bd;
+  padding: 0.5rem;
+}
+
+/* Bottom row layout */
+.bottomRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  
+}
+
+.creditsSection,
+.stakeSection,
+.spinSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionLabel {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  
+}
+
+/* Shared styles for credit and stake displays */
+.credit-message,
+.stakes-message {
+  border: 0.2rem solid #ffd700;
+  margin-bottom: 0.5rem;
+  background-color: #adb5bbbd;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.spinSection {
+  align-self: flex-start; /* Ensure Spin button aligns with squares */
+}
+
+/* Stake Section */
+.stakeSection {
+  display: flex; /* Arrange items horizontally */
+  align-items: center; /* Align items vertically */
+  gap: 0.5rem; /* Add space between items */
+}
+
+/* Stake buttons styling */
+.stakebuttons {
+  background-color: #6c757d;
+  color: #fff;
+  border: 0.1rem solid #ffd700;
+  border-radius: 0.3rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stakebuttons:hover {
+  background-color: #5a6268;
+}
+
+.stakebuttons:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+/* Stake message */
+.stakes-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
